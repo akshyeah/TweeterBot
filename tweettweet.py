@@ -1,10 +1,10 @@
 import tweepy
 import time
 
-consumer_key = 'YSiiIRTe0poG7CNyXBQeRu96w'
-consumer_secret = '5S9hHgQsCDwrePKPj8KyaZObQsO84O3VWyYjhaeNSSTVXJFZyL'
-access_token = '862738332-6nkB4hcFJDKjUbHV3LDk4mrEY4EJfbPujDy5zQmk'
-access_token_secret = 'fttyFJ3P4UlBQ27i0LAREkDLitBot4jbdIUHfuHJDXNn5'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -39,6 +39,6 @@ for tweet in tweepy.Cursor(api.search, search_string).items(numberOfTweets):
 
 # #Generous bot
 # for follower in limit_handler(tweepy.Cursor(api.followers).items()):
-#     if follower.name == 'Shivani':
+#     if follower.name == '<Follower_name>':
 #         follower.follow()
 #         break
